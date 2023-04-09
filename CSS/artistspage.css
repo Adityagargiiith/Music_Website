@@ -1,0 +1,36 @@
+
+.artistcontent{
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+column-gap: 10%;
+margin-left: 20%;
+}
+
+.artistcontent :hover{
+transform:scale(1.04);
+}
+
+.artistcontent img{
+margin-top: 100px;
+/* margin-left: 40%; */
+height:300px;
+width:300px;
+float: left;
+}
+
+.artistcontent a:hover{
+    color:red;
+}
+
+.artistcontent a{
+    text-decoration: none;
+}
+
+
+.artistcontent a{
+    color: white;
+    font-size: 50px;
+    margin-right: 200px;
+}

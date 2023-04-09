@@ -1,0 +1,148 @@
+ 
+ .topartists {
+  margin-left: 0px;
+  height: 450px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+ 
+
+  .head1,.head2,.head3 p{
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 80px;
+    text-align: center;
+    color:red;
+  }
+
+  .artists {
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20%;
+    grid-row-gap: 0px;
+    text-decoration: none;
+    padding:50px;
+  }
+
+  .artists img{
+    width:300px;
+    height:300px;
+    margin-bottom: 4%;
+  }
+
+  .artists li{
+    text-align: center;
+  }
+
+   .artists li:hover{
+    transform:scale(1.04);
+   }
+
+  .name_artists a:hover{
+    color:red;
+  }
+  
+
+  .name_artists a {
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 30px;
+   text-decoration:none;
+   color:white;
+  }
+
+  .topalbums {
+    margin-left: 0px;
+    height: 450px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+   
+  
+    .albums {
+      margin-left: 100px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-column-gap: 20%;
+      grid-row-gap: 0px;
+      text-decoration: none;
+      padding:50px;
+    }
+  
+    .albums img{
+      width:300px;
+      height:300px;
+      margin-bottom: 4%;
+    }
+  
+    .albums li{
+      text-align: center;
+    }
+  
+    .albums li:hover{
+      transform:scale(1.04);
+     }
+
+    .name_albums a:hover{
+      color:red;
+      transform: scale(2.0);
+    }
+    
+  
+    .name_albums a {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+     text-decoration:none;
+     color:white;
+     transition: all 0.2s ease ;
+    }
+   
+    .topsongs {
+      height: 450px;
+      padding-top: 50px;
+      padding-bottom: 100px;
+      margin-bottom: 100px; 
+    }
+     
+    
+      .songs {
+       
+        margin-left: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 20%;
+        grid-row-gap: 0px;
+        text-decoration: none;
+        padding:50px;
+      }
+    
+      .songs img{
+        width:300px;
+        height:300px;
+        margin-bottom: 4%;
+      }
+    
+      .songs li:hover{
+        transform:scale(1.04);
+       }
+
+      .songs li{
+        text-align: center;
+      }
+    
+      .name_songs p{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+         text-decoration:none;
+         color:white;
+         transition: all 0.2s ease ;
+      }
+
+      .name_songs p:hover{
+        color:red;
+      }
+      
+   
