@@ -4,6 +4,13 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background-image: url('../images/Music\ Festival\ Poster\ Background.jpg');
+    background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+
+  }
 
 h1{
     text-align: center;
@@ -22,9 +29,16 @@ h1{
 }
 
 img{
-    height: auto;
-width: 520px;
+    height: 520px;
+/* width: 420px; */
+margin-top: 5%;
+margin-bottom: 5%;
+width: auto;
+transition: transform 0.5s ease-in-out;
 
+}
+img:hover{
+    transform: scale(1.05);
 }
 
 span{
