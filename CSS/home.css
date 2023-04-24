@@ -145,4 +145,10 @@
         color:red;
       }
       
-   
+      body {
+        background-image: url('../images/Music\ Festival\ Poster\ Background.jpg');
+        background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+    
+      }

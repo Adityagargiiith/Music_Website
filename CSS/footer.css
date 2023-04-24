@@ -62,11 +62,11 @@ text-decoration-color: red;
 	background-color: rgba(255,255,255,0.2);
 	margin:0 10px 10px 0;
 	text-align: center;
-	line-height: 40px;
+	line-height: 50px;
 	border-radius: 50%;
-	color: red;
+	color:red;
 	transition: all 0.5s ease;
 }
-.fa-instagram {
-	color: white;
-  }
+.fa-instagram{
+	color: red;
+}
