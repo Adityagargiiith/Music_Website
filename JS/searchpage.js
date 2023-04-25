@@ -12,7 +12,8 @@ function search(){
       tableBody.innerHTML = '';
 
       const numResults = Math.min(data.results.length, 10);
-
+      
+      var c=0;
       
       if((checkbox.checked) && maxtime!='' && !(remove.checked)){
         for (let i = 0; i < numResults; i++) {
@@ -22,6 +23,7 @@ function search(){
           const time=(result.trackTimeMillis)/60000;
 
           if((e1=="notExplicit" || e2=="notExplicit") && (time<=maxtime)){
+          c++;
           const row = tableBody.insertRow();
           const artistNameCell = row.insertCell();
           const trackNameCell = row.insertCell();
@@ -47,7 +49,7 @@ function search(){
           const e2=result.trackExplicitness;
 
           if(e1=="notExplicit" || e2=="notExplicit"){
-          
+          c++;
           const row = tableBody.insertRow();
           const artistNameCell = row.insertCell();
           const trackNameCell = row.insertCell();
@@ -73,6 +75,7 @@ function search(){
 
 
           if(time<=maxtime){
+            c++;
           const row = tableBody.insertRow();
           const artistNameCell = row.insertCell();
           const trackNameCell = row.insertCell();
@@ -96,6 +99,7 @@ function search(){
         maxtime_show.value='';
 
       for (let i = 0; i < numResults; i++) {
+        c++;
         const result = data.results[i];
         const row = tableBody.insertRow();
         const artistNameCell = row.insertCell();
@@ -115,7 +119,13 @@ function search(){
         previewCell.appendChild(audio);
       
       }
-    }})
+    }
+     
+    if(c==0){
+       const w=document.getElementById('noresults');
+       w.innerText="NO Results Found Try Something Else";
+    }
+  })
     .catch(error => {
       console.error(error);
     });

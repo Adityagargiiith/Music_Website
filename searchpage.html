@@ -8,20 +8,23 @@
     <link href="./CSS/footer.css" rel="stylesheet">
     <link href="./CSS/banner.css" rel="stylesheet">
     <link href="./CSS/searchpage.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body style="background-color: black;">
+<body>
     <div class="nav-bar" style="position:fixed">
-        <div class="logo"><img src="./images/logo.png"></div>
+        <div class="logo"><img src="./images/newlogo.jpeg" style="margin-top: 0%;"></div>
     <div class="nav-list">
     <a href="./index.html"><b>Home</b></a>
     <a href="./artists.html"><b>Artists</b></a>
+    <a href="./searchpage.html" style="background-color: grey;"><b>Search</b></a>
+    <a href="./aritist_spotlight.html"><b>Artists Spotlight</b></a>
     <a href="./about.html"><b>About</b></a>
     </div>
-    </div>
+    </div>  
     
     <div class="heading">
-        <p>Explore your Favourite Artists,Albums,Songs....</p>
+        <p>Melody Haven Search Engine</p>
     </div>
     
     <div class="search-bar">
@@ -47,25 +50,21 @@
        <div class="filter_remove" style="color:white;font-size: 40px;">
         <input type="checkbox" id="remove" class="explicit_box">
         <label for="remove">Remove Filters</label>
+       </div>   
        </div>
-
-       
-       </div>
-       
-
-
+    
     <table >
-          
           <tr>
             <th>Artist Name</th>
             <th>Track Name</th>
             <th>Image</th>
             <th>Preview</th>
           </tr>
-   
         <tbody id="table_data">
         </tbody>
     </table>
+
+    <p id="noresults" style="color:white;text-align: center;margin-top: 100px;font-size: 40px;"></p>
     
 <script src="./JS/searchpage.js"></script>
 

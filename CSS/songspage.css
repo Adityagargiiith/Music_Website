@@ -1,4 +1,10 @@
-
+body {
+    background-image: url('../images/hd-wallpaper-g68ca35279_1920.jpg');
+    background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+  
+  }
 
 .albums_songs_heading{
     display:flex;
@@ -45,11 +51,3 @@
     color:white;
     font-size: 30px;
     }    
-
-    body {
-        background-image: url('../images/Music\ Festival\ Poster\ Background.jpg');
-        background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-    
-      }

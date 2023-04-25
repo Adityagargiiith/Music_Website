@@ -1,5 +1,13 @@
+body {
+  background-image: url('../images/jr-korpa-9XngoIpxcEo-unsplash.jpg');
+  background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+
+}
+
 .heading p{
-    color: red;
+    color: rgb(0, 255, 229);
     padding-top: 200px;
     text-align: center;
     font-size: 60px;
@@ -68,6 +76,7 @@
   }
 
   td {
+    font-size:20px;
     color:white;
     padding: 5px;
   }
