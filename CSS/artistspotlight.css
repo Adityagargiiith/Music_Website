@@ -29,7 +29,7 @@ h1{
 }
 
 img{
-    height: 520px;
+    /* height: 520px; */
 /* width: 420px; */
 margin-top: 5%;
 margin-bottom: 5%;
@@ -37,9 +37,9 @@ width: auto;
 transition: transform 0.5s ease-in-out;
 
 }
-img:hover{
+/* img:hover{
     transform: scale(1.05);
-}
+} */
 
 span{
     color: red;
