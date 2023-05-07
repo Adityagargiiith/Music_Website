@@ -1,3 +1,10 @@
+body {
+   background-image: url('../images/paint-brush-3607521_1920.jpg');
+   background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
+ 
+ }
  
 .artistcontent{
 margin: 0 auto;

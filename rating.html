@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Star Rating Form</title>
+  <link rel="stylesheet" href="./CSS/rating.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="star-widget">
+      <p style="color:yellow;font-size: 20px;">Help others discover great art by rating our artist</p>
+      <input type="radio" name="rate" id="rate-5" value="5">
+      <label for="rate-5" class="fas fa-star"></label>
+      <input type="radio" name="rate" id="rate-4" value="4">
+      <label for="rate-4" class="fas fa-star"></label>
+      <input type="radio" name="rate" id="rate-3" value="3">
+      <label for="rate-3" class="fas fa-star"></label>
+      <input type="radio" name="rate" id="rate-2" value="2">
+      <label for="rate-2" class="fas fa-star"></label>
+      <input type="radio" name="rate" id="rate-1" value="1">
+      <label for="rate-1" class="fas fa-star"></label>
+      <form action="#" id="rating-form">
+        <header></header>
+        <div class="textarea">
+          <textarea name="Username" cols="30" placeholder="Write your name"></textarea>
+        </div>
+        <div class="textarea">
+        
+          <textarea name="comment" cols="30" placeholder="Describe your experience.."></textarea>
+        </div>
+        
+        <div class="btn">
+          <button type="submit">Post</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="post">
+      <h2>Thank you for your feedback!</h2>
+      <p>Your name: <span id="Username"></span></p>
+      <p>Your rating: <span id="rating"></span></p>
+      <p>Your comment: <span id="comment"></span></p>
+      <!-- <button type="button" id="edit-btn">Edit</button> -->
+    </div>
+
+  </div>
+
+  <script>
+   const ratingForm = document.querySelector("#rating-form");
+const post = document.querySelector(".post");
+const editBtn = document.querySelector("#edit-btn");
+
+ratingForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const ratingValue = document.querySelector('input[name="rate"]:checked').value;
+
+  const commentValue = document.querySelector('textarea[name="comment"]').value;
+  const Nameofuser = document.querySelector('textarea[name="Username"]').value;
+
+  document.querySelector("#Username").textContent = Nameofuser;
+
+  document.querySelector("#rating").textContent = ratingValue + " stars";
+  document.querySelector("#comment").textContent = commentValue;
+
+  ratingForm.style.display = "none";
+  post.style.display = "block";
+});
+
+editBtn.addEventListener("click", () => {
+  post.style.display = "none";
+  ratingForm.style.display = "block";
+});
+
+  </script>
+
+</body>
+
+</html>

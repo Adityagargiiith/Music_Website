@@ -1,4 +1,11 @@
- 
+body {
+  background-image: url('../images/jr-korpa-9XngoIpxcEo-unsplash.jpg');
+  background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+
+} 
+
  .topartists {
   margin-left: 0px;
   height: 450px;
@@ -12,7 +19,7 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 80px;
     text-align: center;
-    color:red;
+    color:white;
   }
 
   .artists {
@@ -145,4 +152,3 @@
         color:red;
       }
       
-   

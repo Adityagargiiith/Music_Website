@@ -101,3 +101,18 @@ justify-content: space-around;
     align-items: center;
     justify-content: space-around;
 }
+body {
+    background-image: url('../images/Music\ Festival\ Poster\ Background.jpg');
+    background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+
+  }
+
+  /* .typing {
+    visibility: visible;
+  }
+  
+  .typing.hidden {
+    visibility: hidden;
+  } */
