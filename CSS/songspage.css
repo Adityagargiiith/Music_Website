@@ -1,10 +1,4 @@
-body {
-    background-image: url('../images/hd-wallpaper-g68ca35279_1920.jpg');
-    background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-  
-  }
+
 
 .albums_songs_heading{
     display:flex;
@@ -29,38 +23,26 @@ body {
     margin-top: 100px;
     font-size: 30px;
     margin-left: 200px;
+    /* column-gap: 1150px; */
     color: white;
+    /* justify-content: space-around; */
     }
     
 .albums_songs{
     width:85%;
+    /* border-spacing: 500px 0px; */
     border-spacing: 10px;
     margin-top: 30px;
     margin-left: 200px;
 }
 
-.albums_songs td{
-    column-gap:30px;
-}
-
-.artist{
-    display: flex;
-}
-
 .title{
-    color:white;
-    font-size: 30px;
-    }
+        color:white;
+        font-size: 30px;
+        }
 
 .duration{
     color:white;
     font-size: 30px;
-    } 
-    
-.add{
-    width:100px;
-    height:30px;
-    border-radius: 40%;
-    background-color: red;
-    color:white
-}
+    }    
+
