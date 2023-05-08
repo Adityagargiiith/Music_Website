@@ -14,7 +14,7 @@
             <div class="logo"><img src="../images/newlogo.jpeg" style="margin-top: 0%;"></div>
         <div class="nav-list">
         <a href="../index.html"><b>Home</b></a>
-        <a href="../artists.html"   style="background-color: grey;"><b>Artists</b></a>
+        <a href="../artists.html" style="background-color: grey;"><b>Artists</b></a>
         <a href="../searchpage.html"><b>Search</b></a>
         <a href="../aritist_spotlight.html"><b>Artists Spotlight</b></a>
         <a href="../about.html"><b>About</b></a>
@@ -22,44 +22,32 @@
         </div>
         </div>  
 
-     
-
 
         <div class="albums_songs_heading">
         <img src="../images/albumspage/justin/believe.jpg" alt="Believe">
         <p class="songspage" style="color: Red;font-size: 80px;margin-left: 100px;">
             <b>Believe</b>
+            <b class="artist" style="color: white;font-size: 30px;">Justin Bieber</b>
         </p>
         </div>
 
+        <div class="index_albums_songs" style="column-gap: 58%;">
+        <p># Title</p>
+        <p>Duration</p>
+         </div>
+         
+        <hr style="color: white;width:85%;margin-left: 100px;">
+         
         <table class="albums_songs" style="width: 85%;">
-            <tr><td class="title">1.Boyfriend</td><td class="duration">2:51</td><td><button onclick="addToPlaylist('Boyfriend', '2:51')">Add to Playlist</button></td></tr>
-            <tr><td class="title">2.All Around the World</td><td class="duration">4:04</td><td><button onclick="addToPlaylist('All Around the World', '4:04')">Add to Playlist</button></td></tr>
-            <tr><td class="title">3.As Long As You Love Me</td><td class="duration">3:49</td><td><button onclick="addToPlaylist('As Long As You Love Me', '3:49')">Add to Playlist</button></td></tr>
-            <tr><td class="title">4.Take You</td><td class="duration">3:40</td><td><button onclick="addToPlaylist('Take You', '3:40')">Add to Playlist</button></td></tr>
-            <tr><td class="title">5.Right Here</td><td class="duration">3:24</td><td><button onclick="addToPlaylist('Right Here', '3:24')">Add to Playlist</button></td></tr>
-          </table>
-          
-          <script>
-          function addToPlaylist(songName, duration) {
-            // Send an HTTP POST request to the Flask server with the song information
-            fetch('/add-to-playlist', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-              },
-              body: new URLSearchParams({
-                'song_name': songName,
-                'duration': duration
-              })
-            }).then(response => {
-              console.log('Song added to playlist');
-            }).catch(error => {
-              console.error(error);
-            });
-          }
-          </script>
-      
+        <tr><td class="title">1.Boyfriend</td><td class="duration">2:51</td><td><button class="add" onclick="add(event)">Add to Playlist</button></td></tr>
+        <tr><td class="title">2.All Around the World</td><td class="duration">4:04</td><td><button class="add" onclick="add(event)">Add to Playlist</button></td></tr>
+        <tr><td class="title">3.As Long As You Love Me</td><td class="duration">3:49</td><td><button class="add" onclick="add(event)">Add to Playlist</button></td></tr>
+        <tr><td class="title">4.Take You</td><td class="duration">3:40</td><td><button class="add" onclick="add(event)">Add to Playlist</button></td></tr>
+        <tr><td class="title">5.Right Here</td><td class="duration">3:24</td><td><button class="add" onclick="add(event)">Add to Playlist</button></td></tr>
+
+        </table>
+        
+        <script src="../JS/post_songspage.js"></script>
          <footer class="footer" style="margin-top: 100px;">
             <div class="container">
             <div class="row">
@@ -69,7 +57,7 @@
                 </h4>
                 <ul>
                     <li>
-                        <a href="../about.html">about our website <a>
+                        <a href="../about.html">about our website </a>
                     </li>
                     <li>
                         <a href='#'>our music artists</a>
@@ -108,7 +96,7 @@
                     Follow us
                 </h4>
                 <div class="social-links">
-                    <a href="#""><i class="fa fa-facebook-f"></i></a>
+                    <a href="#" style="color: red;"><i class="fa fa-facebook-f"></i></a>
                     <a href="#" class="fa fa-twitter"></a>
                     <a href="#" class="fa fa-youtube"></a>
         <a href="#" class="fa fa-instagram"></a>
