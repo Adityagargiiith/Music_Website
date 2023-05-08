@@ -65,7 +65,7 @@ body {
   height: 50px;
 }
 
-  table, th, td {
+  table, th,td {
     width:70%;
     margin-top: 70px;
     border: 1px solid white;
@@ -76,15 +76,30 @@ body {
   }
 
   td {
+    
     font-size:20px;
     color:white;
     padding: 5px;
   }
 
   th {
+  
     font-size: 30px;
     padding:40px;
-    background-color: lightgray;}
+    background-color: lightgray;
   }
 
+  .remove{
+    background: red;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    margin-top: 5%;
+    transition: all 0.3s ease-in-out;
+
+
+  }
   

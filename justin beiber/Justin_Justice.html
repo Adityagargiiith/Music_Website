@@ -7,6 +7,7 @@
      <link href="../CSS/songspage.css" rel="stylesheet">
      <link href="../CSS/banner.css" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+     <!-- <link href="CSS/songspage.css" rel="stylesheet"> -->
     </head>
     <body style="background-color:black">
         <div class="nav-bar" style="position:fixed">
@@ -17,6 +18,7 @@
         <a href="../searchpage.html"><b>Search</b></a>
         <a href="../aritist_spotlight.html"><b>Artists Spotlight</b></a>
         <a href="../about.html"><b>About</b></a>
+        <a href="../playlistpage.html"><b>Playlist</b></a>
         </div>
         </div>  
 
@@ -24,11 +26,10 @@
         <img src="../images/albumspage/justin/justice.jpg" alt="Justice">
         <p class="songspage" style="color: Red;font-size: 80px;margin-left: 100px;">
             <b>Justice</b>
-            <b class="artist" style="color: white;font-size: 30px;">Justin Bieber</b>
         </p>
         </div>
 
-        <div class="index_albums_songs" style="column-gap: 48%;">
+        <div class="index_albums_songs" style="column-gap: 70%;">
         <p># Title</p>
         <p>Duration</p>
          </div>
@@ -36,14 +37,16 @@
         <hr style="color: white;width:85%;margin-left: 100px;">
          
         <table class="albums_songs" style="width:89%">
-        <tr><td class="title">1.Somebody</td><td class="duration">2:59</td><td><button class="add" onclick="add(event)">Add to Playlist</button></td></tr>
-        <tr><td class="title">2.Deserve You</td><td class="duration">3:07</td><td><button class="add" onclick="add(event)">Add to Playlist</button></td></tr>
-        <tr><td class="title">3.Off My Face</td><td class="duration">2:36</td><td><button class="add" onclick="add(event)">Add to Playlist</button></td></tr>
-        <tr><td class="title">4.As I Am</td><td class="duration">2:54</td><td><button class="add" onclick="add(event)">Add to Playlist</button></td></tr> 
-        <tr><td class="title">5.Ghost</td><td class="duration">2:33</td><td><button class="add" onclick="add(event)">Add to Playlist</button></td></tr>     
+        <tr><td class="title">1.Somebody</td><td class="duration">2:59</td>
+        <tr><td class="title">2.Deserve You</td><td class="duration">3:07</td> 
+        <tr><td class="title">3.Off My Face</td><td class="duration">2:36</td>
+        <tr><td class="title">4.As I Am</td><td class="duration">2:54</td> 
+        <tr><td class="title">5.Ghost</td><td class="duration">2:33</td>     
+        </tr>
 
         </table>
-        <script src="../JS/post_songspage.js"></script>
+        
+
          <footer class="footer" style="margin-top: 100px;">
             <div class="container">
             <div class="row">
@@ -92,7 +95,7 @@
                     Follow us
                 </h4>
                 <div class="social-links">
-                    <a href="#" style="color: red;"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#""><i class="fa fa-facebook-f"></i></a>
                     <a href="#" class="fa fa-twitter"></a>
                     <a href="#" class="fa fa-youtube"></a>
         <a href="#" class="fa fa-instagram"></a>
